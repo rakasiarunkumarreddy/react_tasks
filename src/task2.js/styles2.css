@@ -1,0 +1,28 @@
+/* Styling the table */
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 3px solid black; /* Adds border around the entire table */
+  }
+  
+  /* Styling table headers */
+  .table th {
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center; 
+    background-color: pink; 
+  }
+  
+  /* Styling table data cells */
+  .table td {
+    border: 1px solid black; 
+    padding: 10px; 
+    text-align: center;
+  }
+  
+  /* Optional: Styling for images inside table cells */
+  .table img {
+    width: 80px; /* Optional: Adjust the image size */
+    height: 80px;
+  }
+  
