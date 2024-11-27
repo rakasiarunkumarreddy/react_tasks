@@ -246,12 +246,16 @@ const products= [
 
 const Main = () => {
   return (
-    <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:"10px"}}>
+    <div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:"10px",border:"2px solid black",padding:"20px",margin:"20px"}}>
     {products.map((a,b)=>{
       return (
         <Cards titles={a.title} data={a.description} images={a.image} />
       )
     })}
+    </div>
+    <h1>Task 5 Completed</h1>
+    <hr style={{ border: "none", borderTop: "2px dotted #333", margin: "20px 0" }} />
     </div>
   )
 }
