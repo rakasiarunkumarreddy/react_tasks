@@ -5,7 +5,8 @@ import Compo from "./task3.js/compo"
 import Portfolio from "./task4.js/portfolio"
 import Main from './task5.js/main';
 import Tables from "./task6.js/Bootstrap_tabes"
-import Parent from './task7/parentCompo';
+import Parent from './propdrilling/parentCompo';
+import Counter from "./task7/counter"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Main/>
       <Tables/>
       <Parent/>
+      <Counter/>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+/* Counter.css */
+.counter-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .counter-container h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .counter-buttons button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: maroon;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .counter-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .counter-buttons button:active {
+    transform: scale(0.95);
+  }
+  
