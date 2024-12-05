@@ -7,7 +7,8 @@ import Main from './task5.js/main';
 import Tables from "./task6.js/Bootstrap_tabes"
 import Parent from './propdrilling/parentCompo';
 import Counter from "./task7/counter"
-
+import Form from './task8/forms';
+import EvenOddChecker from './task9/evenodd';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,8 @@ function App() {
       <Tables/>
       <Parent/>
       <Counter/>
+      <Form/>
+      <EvenOddChecker/>
     </div>
   );
 }
