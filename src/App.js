@@ -9,11 +9,14 @@ import Parent from './propdrilling/parentCompo';
 import Counter from "./task7/counter"
 import Form from './task8/forms';
 import EvenOddChecker from './task9/evenodd';
+import Todolist from './task10/todolist';
+import UpdatedState from "./task11/SpinnerRemovalonUpdate"
+import UpdatedStateTask from "./task12/UpdateState"
 import FuncCounter from './task13/funcCounter';
 import Calculator from './task14/calculator';
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{fontFamily:"Times New Roman"}}>
       <New/>
       <Table/>
       <Compo/>
@@ -24,6 +27,9 @@ function App() {
       <Counter/>
       <Form/>
       <EvenOddChecker/>
+      <Todolist/>
+      <UpdatedState/>
+      <UpdatedStateTask/>
       <FuncCounter/>
       <Calculator/>
     </div>
