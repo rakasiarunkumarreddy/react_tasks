@@ -9,6 +9,7 @@ class Form extends Component {
       number: "",
       password: "",
       submitted: false, // To track form submission
+      submittedData: null, // To store submitted data
     };
   }
 
@@ -21,11 +22,19 @@ class Form extends Component {
   // Handle form submission
   handleSubmit = (event) => {
     event.preventDefault(); // Prevent page refresh
-    this.setState({ submitted: true }); // Update submission status
+    const { name, email, number, password } = this.state;
+    this.setState({
+      submitted: true, // Update submission status
+      submittedData: { name, email, number, password }, // Store submitted data
+      name: "", // Reset the name field
+      email: "", // Reset the email field
+      number: "", // Reset the number field
+      password: "", // Reset the password field
+    });
   };
 
   render() {
-    const { name, email, number, password, submitted } = this.state;
+    const { name, email, number, password, submitted, submittedData } = this.state;
 
     return (
       <div style={{ width: "400px", margin: "20px auto" }}>
@@ -78,13 +87,13 @@ class Form extends Component {
           <button type="submit">Submit</button>
         </form>
 
-        {submitted && (
-          <div style={{ marginTop: "20px", border: "1px solid #ccc", padding: "10px" }}>
+        {submitted && submittedData && (
+          <div style={{ marginTop: "20px", border: "1px solid #ccc", padding: "10px"}}>
             <h3>Submitted Details</h3>
-            <p><strong>Name:</strong> {name}</p>
-            <p><strong>Email:</strong> {email}</p>
-            <p><strong>Number:</strong> {number}</p>
-            <p><strong>Password:</strong> {password}</p>
+            <p><h2>Name:</h2> {submittedData.name}</p>
+            <p><h2>Email:</h2> {submittedData.email}</p>
+            <p><h2>Number:</h2> {submittedData.number}</p>
+            <p><h2>Password:</h2> {submittedData.password}</p>
           </div>
         )}
         <h1>Task 8 completed</h1>

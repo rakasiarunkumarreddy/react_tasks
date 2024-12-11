@@ -9,6 +9,8 @@ import Parent from './propdrilling/parentCompo';
 import Counter from "./task7/counter"
 import Form from './task8/forms';
 import EvenOddChecker from './task9/evenodd';
+import FuncCounter from './task13/funcCounter';
+import Calculator from './task14/calculator';
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,8 @@ function App() {
       <Counter/>
       <Form/>
       <EvenOddChecker/>
+      <FuncCounter/>
+      <Calculator/>
     </div>
   );
 }
